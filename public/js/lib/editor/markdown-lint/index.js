@@ -5,6 +5,9 @@ import markdownlint from 'markdownlint'
 import '@hackmd/codemirror/addon/lint/lint'
 import './lint.css'
 
+window.markdownit = require('markdown-it')
+require('markdownlint');
+
 (function (mod) {
   mod(CodeMirror)
 })(function (CodeMirror) {
